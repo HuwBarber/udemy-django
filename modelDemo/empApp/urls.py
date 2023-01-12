@@ -15,8 +15,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from django.conf.urls import include
+from empApp.views import employeeData
+
 urlpatterns = [
-    path("admin/", admin.site.urls),
-    path("empApp/", include("empApp.urls"))
+    path("emp/", employeeData),
 ]
